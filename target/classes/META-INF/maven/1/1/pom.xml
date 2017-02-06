@@ -13,6 +13,24 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  	<distributionManagement>
+			<repository>
+				<id>nexus</id>
+				<name>Nexus Releases</name>
+				<url>http://34.248.30.252:8081/repository/maven-releases/</url>
+			</repository>
+			<snapshotRepository>
+				<id>nexus</id>
+				<name>Nexus Snapshot</name>
+				<url>http://34.248.30.252:8081/repository/maven-snapshots/</url>
+			</snapshotRepository>
+			<site>
+				<id>nexus</id>
+				<name>Nexus Sites</name>
+				<url>dav:http://34.248.30.252:8081/</url>
+			</site>
+		</distributionManagement>
 
   <dependencies>
     <dependency>
